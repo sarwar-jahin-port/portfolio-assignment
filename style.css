@@ -1,0 +1,330 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: black;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link{
+    margin-left: 5%;
+    padding: 0;
+    border: 2px solid black;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover{
+    border: 2px solid yellow;
+}
+
+.cv-btn{
+    border: none;
+    font-size: 1em;
+    background-color: #fd6f00;
+    color: white;
+    text-decoration: none;
+    margin-left: 5%;
+    width: 350px;
+    padding: 2%;
+}
+
+/* Banner */
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 0;
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.banner-left-title{
+    color: white;
+    font-size: 3em;
+    margin-bottom: 2%;
+}
+.banner-left-intro{
+    color: gray;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.portfolio-btn{
+    background-color: #fd6f00;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 2% 5%;
+    width: fit-content;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.banner-left-links{
+    display: flex;
+    gap: 2%;
+}
+
+/* Main section */
+/* About me */
+.about-me{
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3% 0;
+}
+
+.about-me-left h1{
+    color: white;
+    font-size: 2em;
+    margin-bottom: 3%;
+}
+
+.about-me-left p{
+    color: rgb(165, 165, 165);
+    font-weight: bold;
+}
+
+.about-me-experience h1{
+    font-size: 2em;
+    color: white;
+    padding-bottom: 5%;
+}
+.about-me-experience p{
+    color: white;
+}
+
+/* Experience */
+.experience{
+    background: linear-gradient(270.16deg, rgba(255, 177, 71, 0.1) 5.74%, rgba(255, 108, 99, 0.1) 50.64%, rgba(184, 106, 223, 0.1) 92.05%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 0;
+}
+.experience-left h1{
+    font-size: 2em;
+    margin-bottom: 3%;
+}
+.experience-left p{
+    font-size: 1.2em;
+}
+.year{
+    font-size:2em;
+    margin-bottom: 5%;
+}
+.course{
+    font-size: 1.5em;
+    margin-bottom: 5%;
+}
+/* Projects */
+.projects{
+    background-color: rgb(73, 73, 73);
+    padding: 5% 0;
+}
+.projects-intro{
+    text-align: center;
+}
+.projects h1{
+    font-size: 2em;
+    color: white;
+    margin-bottom: 1%;
+}
+.projects p{
+    font-size: 1.1em;
+    color: rgb(172, 169, 169);
+    font-weight: bold;
+}
+.project{
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.project-left{
+    width: 40%;
+}
+.project-left img{
+    width: 100%;
+}
+.project-right{
+    width: 40%;
+}
+.project-right p{
+    width: 50%;
+    text-align: start;
+}
+.project2-left{
+    width: 40%;
+}
+.project2-left p{
+    width: 50%;
+    text-align: start;
+}
+.project2-right{
+    width: 40%;
+}
+.project2-right img{
+    width: 100%;
+}
+/* Contact */
+.contact{
+    background-color: rgb(73, 73, 73);
+    padding: 5% 0;
+    color: white;
+}
+.contact-form{ 
+    border: 1px solid orange;
+    width: 50%;
+    margin: auto;
+    padding: 5%;
+}
+.contact-form h1{
+    font-size: 2em;
+    margin-bottom: 5%;
+    text-align: center;
+}
+form{
+    background-color: #fd6e002a;
+    padding: 5%;
+}
+form button{
+    border: none;
+    font-size: 1.5em;
+    background-color: #fd6f00;
+    color: white;
+    text-decoration: none;
+    padding: 2%;
+}
+.inputs div{
+    margin-bottom: 3%;
+}
+.name-email{
+    display: flex;
+    justify-content: space-between;
+}
+.name-input, .email-input{
+    width: 50%;
+}
+.name-input input, .email-input input, .message-input textarea{
+    width: 89%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cv-btn{
+        width: 100%;
+    }
+    .logo {
+        margin-bottom: 2%;
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-left-title {
+        font-size: 2em;
+    }
+
+    .banner-left-intro {
+        font-size: 1em;
+    }
+    .banner-left-links{
+        margin-bottom: 5%;
+    }
+    .banner-left-links a img{
+        width: 60%;
+    }
+    .portfolio-btn {
+        font-size: 1em;
+        padding: 3% 5%;
+    }
+    .about-me{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me-left{
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .about-me-left h1, .about-me-experience h1, .experience-left h1, .projects h1, .contact-form h1 {
+        font-size: 1.5em;
+    }
+
+    .about-me-left p, .experience-left p, .projects p, .contact-form p {
+        font-size: 1em;
+    }
+
+    .year, .course {
+        font-size: 1.5em;
+    }
+    .experience{
+        display: flex;
+        flex-direction: column;
+    }
+    .experience-left{
+        margin-bottom: 10%;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-left{
+        width: fit-content;
+    }
+    .project-left,.project2-left,.project-right, .project2-right{
+        width: 100%;
+    }
+    .contact-form {
+        width: 90%;
+    }
+
+    form button {
+        font-size: 1em;
+        padding: 3%;
+    }
+
+    .name-input input, .email-input input, .message-input textarea {
+        width: 100%;
+    }
+
+    .inputs div {
+        margin-bottom: 5%;
+    }
+}
